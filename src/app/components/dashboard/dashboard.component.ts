@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  // functionImage = src => '<img alt="" src="' + src + '">';
 
   constructor() { }
 
@@ -13,3 +14,6 @@ export class DashboardComponent implements OnInit {
   }
 
 }
+
+// '../../../assets/gifs/gif1.gif
+// '+ placeholder +'

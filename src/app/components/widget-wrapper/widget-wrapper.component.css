@@ -16,3 +16,12 @@
     width: 100%;
     margin: 0;
 }
+
+.hidden {
+    display: none;
+}
+
+img {
+    height: 90%;
+    margin: auto;
+}

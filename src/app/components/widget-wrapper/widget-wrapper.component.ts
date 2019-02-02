@@ -7,7 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class WidgetWrapperComponent implements OnInit {
   @Input() title:string;
-  @Input() content: any;
+  @Input() contentText: string;
+  @Input() srcImage: string;
+
 
   constructor() {
  
