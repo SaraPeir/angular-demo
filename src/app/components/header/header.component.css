@@ -1,0 +1,67 @@
+.header-container {
+    height: 50px;
+    border-bottom: 2px solid crimson;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo-container {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100%;
+}
+
+.text-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header-text {
+    color:  crimson;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#angular-logo {
+   height: 100%;
+   width: 100%;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .header-container {
+        height: 100px;
+    }
+
+    .logo-container {
+        width: 15%;
+    }
+    #header-text {
+        font-size: 45px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .logo-container {
+        width: 10%;
+    }
+  }
+
+ /*  @media only screen and (min-width: 1024px) {
+    .header-container {
+        height: 100px;
+    }
+
+    .logo-container {
+        width: 10%;
+    }
+    #header-text {
+        font-size: 50px;
+    }
+  } */
+
