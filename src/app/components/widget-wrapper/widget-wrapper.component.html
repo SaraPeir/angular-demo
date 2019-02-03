@@ -1,7 +1,9 @@
+<!-- Todos los widgets tienen en comun solo el titulo y contenido de texto. Todo lo restante puede ser injectado a través de <ng-content></ng-content> -->
+
 <div class="widget-wrapper">
-  <div class="title-container">{{title}}</div>
+  <h3 class="title-container">{{title}}</h3>
   <div class="content-container">
-    {{contentText}}
-    <img class="{{srcImage ? '' : 'hidden'}}" id="angular-logo" alt="Angular Logo" src={{srcImage}}>
+    <p class="text-style {{contentText ? '': 'warning-text'}}">{{contentText ? contentText : 'contenido vacío'}}</p>
+    <ng-content></ng-content>
   </div>
 </div>
