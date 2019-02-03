@@ -1,9 +1,9 @@
-<!-- Todos los widgets tienen en comun solo el titulo y contenido de texto. Todo lo restante puede ser injectado a través de <ng-content></ng-content> -->
+<!-- Todos los widgets tienen en comun solo el titulo (obligatorio) y contenido de texto (facultativo). Todo lo restante puede ser injectado a través de <ng-content></ng-content> -->
 
 <div class="widget-wrapper">
-  <h3 class="title-container">{{title}}</h3>
+  <h3 class="title-container {{title ? '' : 'warning-text'}}">{{title ? title : 'No title'}}</h3>
   <div class="content-container">
-    <p class="text-style {{contentText ? '': 'warning-text'}}">{{contentText ? contentText : 'contenido vacío'}}</p>
+    <p class="text-style">{{contentText}}</p>
     <ng-content></ng-content>
   </div>
 </div>
